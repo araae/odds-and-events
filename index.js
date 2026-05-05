@@ -35,3 +35,17 @@ function Title() {
   h1.textContent = "Odds and Evens";
   return h1;
 }
+
+//create a container, add a heading and a box with numbers
+function NumberList(heading, numbers) {
+  const container = document.createElement("div");
+  const h2 = document.createElement("h2");
+  h2.textContent = heading;
+  const box = document.createElement("div");
+  box.textContent = numbers.join(" ");
+
+  container.appendChild(h2);
+  container.appendChild(box);
+
+  return container;
+}
